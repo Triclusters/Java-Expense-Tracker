@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NfCqy_lMGw448Q8RjZKD">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="START — User launches application&lt;br&gt;Enters Purchases and views the spending" vertex="1">
+          <mxGeometry height="80" width="140" x="350" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Main.java:&lt;br&gt;Console Menu, Scanner, and checking if input is valid" vertex="1">
+          <mxGeometry height="70" width="125" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ExpenseTracker.java:&lt;div&gt;Add expenses, view expenses, store a total&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-4" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="90" as="sourcePoint" />
+            <mxPoint x="420" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-7" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="430" y="410" as="sourcePoint" />
+            <mxPoint x="430" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-8" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="240" y="610" as="sourcePoint" />
+            <mxPoint x="340" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-9" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="580" y="630" as="sourcePoint" />
+            <mxPoint x="490" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Expense.java:&lt;div&gt;Name, category, amount, date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="expenses.csv:&lt;br&gt;storage for expenses&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User input" vertex="1">
+          <mxGeometry height="30" width="60" x="430" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Requests/REsults" vertex="1">
+          <mxGeometry height="30" width="60" x="460" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Create/Access Expense" vertex="1">
+          <mxGeometry height="30" width="60" x="210" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2h3sJT9PHQRnLKL-ddgl-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Save/Load CSV" vertex="1">
+          <mxGeometry height="30" width="60" x="540" y="535" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
