@@ -50,17 +50,15 @@ After completing the MVP, I plan to add:
 
 ## Development Milestones
 
-Each milestone will correspond to a Git commit.
-
-1. Set up the project with initial Java files.
-2. Create the Expense class to store expense information.
-3. Add functionality for recording expenses.
-4. Implement viewing and organizing expenses.
-5. Calculate spending totals.
-6. Implement monthly budgeting.
-7. Add functionality for editing and deleting expenses.
-8. Implement file saving and loading.
-9. Test the application, handle errors, and finalize documentation.
+- [x] Set up the project with initial Java files.
+- [x] Create the Expense class to store expense information.
+- [ ] Add functionality for recording expenses.
+- [ ] Implement viewing and organizing expenses.
+- [ ] Calculate spending totals.
+- [ ] Implement monthly budgeting.
+- [ ] Add functionality for editing and deleting expenses.
+- [ ] Implement file saving and loading.
+- [ ] Test the application, handle errors, and finalize documentation.
 
 ## Project Structure
 
