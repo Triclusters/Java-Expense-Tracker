@@ -12,7 +12,8 @@ public class Main{
         while(true){
             System.out.println("\n1. Add Expense");
             System.out.println("2. View Expenses");
-            System.out.println("3. Exit");
+            System.out.println("3. View Total Spending");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 
             String input = sc.nextLine();
@@ -57,6 +58,9 @@ public class Main{
                 tracker.viewExpenses();
             }
             else if(input.equals("3")){
+                System.out.printf("Total spending: $%.2f%n", tracker.getTotal());
+            }
+            else if(input.equals("4")){
                 System.out.println("Goodbye!");
                 break;
             }

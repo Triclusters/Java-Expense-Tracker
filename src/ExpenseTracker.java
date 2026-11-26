@@ -23,4 +23,14 @@ public class ExpenseTracker{
             System.out.println((i + 1) + ". " + expenses.get(i));
         }
     }
+
+    public double getTotal(){
+        double total = 0;
+
+        for(int i = 0; i < expenses.size(); i++){
+            total += expenses.get(i).getAmount();
+        }
+
+        return total;
+    }
 }

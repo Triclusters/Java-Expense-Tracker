@@ -54,7 +54,7 @@ After completing the MVP, I plan to add:
 - [x] Create the Expense class to store expense information.
 - [x] Add functionality for recording expenses.
 - [x] Implement viewing and organizing expenses.
-- [ ] Calculate spending totals.
+- [x] Calculate spending totals.
 - [ ] Implement monthly budgeting.
 - [ ] Add functionality for editing and deleting expenses.
 - [ ] Implement file saving and loading.
