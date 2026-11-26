@@ -53,7 +53,7 @@ After completing the MVP, I plan to add:
 - [x] Set up the project with initial Java files.
 - [x] Create the Expense class to store expense information.
 - [x] Add functionality for recording expenses.
-- [ ] Implement viewing and organizing expenses.
+- [x] Implement viewing and organizing expenses.
 - [ ] Calculate spending totals.
 - [ ] Implement monthly budgeting.
 - [ ] Add functionality for editing and deleting expenses.

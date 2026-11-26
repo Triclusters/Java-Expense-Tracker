@@ -10,4 +10,17 @@ public class ExpenseTracker{
     public void addExpense(Expense e){
         expenses.add(e);
     }
+
+    public void viewExpenses(){
+        if(expenses.isEmpty()){
+            System.out.println("No expenses recorded.");
+            return;
+        }
+
+        System.out.println("\nRecorded Expenses:");
+
+        for(int i = 0; i < expenses.size(); i++){
+            System.out.println((i + 1) + ". " + expenses.get(i));
+        }
+    }
 }
