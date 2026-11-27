@@ -53,6 +53,30 @@ public class ExpenseTracker{
         return total;
     }
 
+    public void filterCategory(String category){
+        int count = 0;
+        double total = 0;
+
+        System.out.println("\nMatching Expenses:");
+
+        for(int i = 0; i < expenses.size(); i++){
+            Expense e = expenses.get(i);
+
+            if(e.getCategory().trim().equalsIgnoreCase(category.trim())){
+                count++;
+                System.out.println(count + ". " + e);
+                total += e.getAmount();
+            }
+        }
+
+        if(count == 0){
+            System.out.println("No expenses found in this category.");
+            return;
+        }
+
+        System.out.printf("Category total: $%.2f%n", total);
+    }
+
     public boolean saveExpenses(){
         Path file = Path.of(fileName);
         Path temp = Path.of(fileName + ".tmp");
