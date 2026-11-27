@@ -1,4 +1,6 @@
+
 import java.util.Scanner;
+import java.util.NoSuchElementException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
@@ -17,6 +19,11 @@ public class Main{
             System.out.println("3. View Total Spending");
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
+
+            if(!sc.hasNextLine()){
+                System.out.println("Input ended. Closing application.");
+                break;
+            }
 
             String input = sc.nextLine();
 
@@ -61,6 +68,10 @@ public class Main{
                 }
                 catch(DateTimeParseException e){
                     System.out.println("Please enter a valid date.");
+                }
+                catch(NoSuchElementException e){
+                    System.out.println("Input ended. Closing application.");
+                    break;
                 }
             }
             else if(input.equals("2")){
