@@ -11,7 +11,12 @@ public class Main{
 
         System.out.println("Welcome to Java Expense Tracker!");
 
-        tracker.loadExpenses();
+        // Prevent existing data from being overwritten after a failed load.
+        if(!tracker.loadExpenses()){
+            System.out.println("Unable to load expenses. Closing application.");
+            sc.close();
+            return;
+        }
 
         while(true){
             System.out.println("\n1. Add Expense");
@@ -58,10 +63,13 @@ public class Main{
                     }
 
                     Expense e = new Expense(name, category, amount, date);
-                    tracker.addExpense(e);
-                    tracker.saveExpenses();
 
-                    System.out.println("Expense added successfully!");
+                    if(tracker.addExpense(e)){
+                        System.out.println("Expense added successfully!");
+                    }
+                    else{
+                        System.out.println("Expense could not be added.");
+                    }
                 }
                 catch(NumberFormatException e){
                     System.out.println("Please enter a valid amount.");
