@@ -57,7 +57,7 @@ After completing the MVP, I plan to add:
 - [x] Calculate spending totals.
 - [ ] Implement monthly budgeting.
 - [ ] Add functionality for editing and deleting expenses.
-- [ ] Implement file saving and loading.
+- [x] Implement file saving and loading.
 - [ ] Test the application, handle errors, and finalize documentation.
 
 ## Project Structure
@@ -75,4 +75,8 @@ The application will be developed using Java and VS Code. Once the implementatio
 
 ## Project Status
 
-Currently in the planning and design stage. Implementation will follow the development milestones listed above.
+All four MVP features have been implemented, including
+expense recording, expense viewing, total spending
+calculations, and persistent file storage.
+
+Additional features and final testing are in development.

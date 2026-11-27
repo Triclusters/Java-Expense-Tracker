@@ -9,6 +9,8 @@ public class Main{
 
         System.out.println("Welcome to Java Expense Tracker!");
 
+        tracker.loadExpenses();
+
         while(true){
             System.out.println("\n1. Add Expense");
             System.out.println("2. View Expenses");
@@ -42,8 +44,15 @@ public class Main{
                         continue;
                     }
 
+                    // Commas are reserved for separating CSV fields.
+                    if(name.contains(",") || category.contains(",")){
+                        System.out.println("Name and category cannot contain commas.");
+                        continue;
+                    }
+
                     Expense e = new Expense(name, category, amount, date);
                     tracker.addExpense(e);
+                    tracker.saveExpenses();
 
                     System.out.println("Expense added successfully!");
                 }
