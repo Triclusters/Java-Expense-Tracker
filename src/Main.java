@@ -22,7 +22,8 @@ public class Main{
             System.out.println("\n1. Add Expense");
             System.out.println("2. View Expenses");
             System.out.println("3. View Total Spending");
-            System.out.println("4. Exit");
+            System.out.println("4. Filter by Category");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
 
             if(!sc.hasNextLine()){
@@ -89,6 +90,23 @@ public class Main{
                 System.out.printf("Total spending: $%.2f%n", tracker.getTotal());
             }
             else if(input.equals("4")){
+                System.out.print("Enter category: ");
+
+                if(!sc.hasNextLine()){
+                    System.out.println("Input ended. Closing application.");
+                    break;
+                }
+
+                String category = sc.nextLine();
+
+                if(category.isBlank()){
+                    System.out.println("Category cannot be empty.");
+                    continue;
+                }
+
+                tracker.filterCategory(category);
+            }
+            else if(input.equals("5")){
                 System.out.println("Goodbye!");
                 break;
             }
